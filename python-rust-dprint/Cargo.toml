@@ -1,0 +1,17 @@
+[package]
+name = "dprint-python-bridge"
+version = "0.1.0"
+authors = [""]
+edition = "2018"
+
+[lib]
+name = "dprint_python_bridge"
+crate-type = ["cdylib"]
+
+[dependencies]
+dprint-plugin-typescript = "0.85.1"
+serde_json = "1.0.104"
+
+[dependencies.pyo3]
+version = "0.19.1"
+features = ["extension-module", "generate-import-lib"]
